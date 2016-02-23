@@ -4,8 +4,10 @@ from transbot_config import *
 import transmissionrpc
 import argparse
 
-tc = transmissionrpc.Client(server, port)
 
+parser = argparse.ArgumentParser()
+
+tc = transmissionrpc.Client(server, port)
 torrents = tc.get_torrents()
 
 print(torrents)
