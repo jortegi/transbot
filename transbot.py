@@ -2,7 +2,7 @@
 
 from transbot_config import *
 import transmissionrpc
-
+import argparse
 
 tc = transmissionrpc.Client(server, port)
 
